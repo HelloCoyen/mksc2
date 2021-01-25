@@ -81,14 +81,3 @@ class Start(object):
             h = "help train2"
             if self._step(a, h, self._get_param, self._exit) == "y":
                 train(self.accepts)
-
-
-start = Start()
-
-
-
-
-
-
-
-

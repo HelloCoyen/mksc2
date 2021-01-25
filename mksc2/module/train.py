@@ -1,8 +1,8 @@
 import argparse
 from statsmodels.iolib.smpickle import load_pickle
-from mksc.utils import load_data, get_variable_type
-from mksc.feature import transform
-from mksc.model import training
+from mksc2.engineer.prepocess import load_data, get_variable_type
+# from mksc2.feature import transform
+# from mksc2.model import training
 from custom import Custom
 
 def train(custom, **kwargs):

@@ -23,6 +23,7 @@ def eda(report=False):
 
     # 生成变量类别配置文件
     print(">>> 生成配置表config/variable_type.csv，请完善配置...")
+
     # 变量是否保留进行特征工程(isSave): 0-不保留；1-保留
     # 变量类型(Type): numeric-数值类型；category-类别类型；datetime-日期类型；label-标签列；identifier-业务标识符
     res = pd.DataFrame(zip(data.columns, [1]*len(data.columns), ['numeric']*len(data.columns), ['']*len(data.columns)),

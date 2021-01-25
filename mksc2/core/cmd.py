@@ -2,7 +2,8 @@ import os
 import shutil
 import sys
 from mksc2 import __version__
-from mksc2 import start
+from mksc2 import Start
+
 
 def generate_template(name):
     """
@@ -22,6 +23,7 @@ def generate_template(name):
     os.mkdir(os.path.join(os.getcwd(), name, 'result'))
     os.mkdir(os.path.join(os.getcwd(), name, 'data'))
 
+
 def main():
     """
     命令行工具程序主入口
@@ -30,6 +32,7 @@ def main():
         print(f"mksc2 version:{__version__}")
         return "CMD FORMAT: \n\tmksc2 project_name1 project_name2 ...\nPlease delivery one argument at least"
     elif sys.argv[1] == 'start':
+        start = Start()
         start.run()
     else:
         for project_name in sys.argv[1:]:
